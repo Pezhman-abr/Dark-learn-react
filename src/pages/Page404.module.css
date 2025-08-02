@@ -1,0 +1,51 @@
+@import '../components/fonts.css';
+.container {
+  min-height: 75vh;
+  background: linear-gradient(135deg, #a6c3df, #d7aee0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-family: YekanBakhHeavy;
+  margin: 110px 0 30px 0;
+  border-radius: 10px;
+}
+
+.box {
+  max-width: 500px;
+}
+
+.code {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #4299e1;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3182ce;
+}

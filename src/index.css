@@ -1,0 +1,91 @@
+
+
+
+:root {
+    --Font1-color: #111827 ;
+    --Font2--color: #374151 ;
+    --Font3--color: #64748B ;
+    --FontHover--color : #1EB35B ;
+    --BodyBackground--Color : #e9e8e8bd ;
+    --Box--color : #ffff ;
+    --BoxSadow-color: #DDD;
+    --Titlehavar-color: #23bb598e ;
+    --Footer--bg-color : #FFF ;
+    --glass-background: rgba(255, 255, 255, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-hard: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --hover-glow: 0 0 15px rgba(99, 241, 187, 0.804), 0 0 30px rgba(99, 241, 187, 0.593);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --card-radius: 20px;
+    --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+    --blur-effect: blur(10px);
+    --Glass-bg--menu: rgba(21, 21, 21, 0.82);
+    --primary-gradient: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --text--hover-color : rgb(99, 241, 158);
+    --glass-bg: rgba(2, 2, 2, 0.493);
+    --bs-color: #08b642;
+    --navbar-color : #fff
+
+
+}
+.dark{
+    --Font1-color: #FFF ;
+    --Font2--color: #9CA3AF ;
+    --Font3--color: #FFFFFFB3 ;
+    --FontHover--color : rgb(99, 102, 241) ;
+    --BodyBackground--Color : #111827 ;
+    --Box--color : rgb(36 42 56) ;
+    --BoxSadow-color : none ;
+    --Titlehavar-color: #056a28c0 ;
+    --Footer--bg-color : #242A38 ;
+    --hover-glow: 0 0 15px rgba(99, 102, 241, 0.7), 0 0 30px rgba(99, 102, 241, 0.5);
+    --text--hover-color : rgb(99, 102, 241);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --navbar-color: #0b0b0b;
+
+}
+
+body {
+  max-width: 1250px;
+  background-color: var(--BodyBackground--Color);
+  margin: auto;     
+  font-family: iranyekanwebregular;         
+}
+
+.swiper-wrapper{
+  padding-top: 100px;
+}
+
+
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  color: #fff;
+  border: 2px solid #24cb51;
+  padding: 12px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+}
+
+.custom-prev {
+
+  left: 0px;
+}
+
+.custom-next {
+  left: 60px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 0 #444 inset ;
+  -webkit-text-fill-color: var(--bs-color);
+  transition: background-color 5000s ease-in-out 0s;
+}

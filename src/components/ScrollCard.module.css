@@ -1,0 +1,20 @@
+.container{
+    margin-top: 100px;
+}
+
+.papulerCourseHeader{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.papulerCourseHeader span:first-child{
+    color: #fff;
+    background-color: var(--bs-color);
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.papulerCourseHeader span:last-child{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,39 @@
+.container{
+    margin-top: 100px;
+}
+
+
+.container  > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.freeCourseHeader{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.freeCourseHeader span:nth-child(1){
+    color: #fff;
+    background-color: var(--bs-color);
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.moreCourses {
+    text-decoration: none;
+    color: var(--Font2--color);
+    
+}
+.moreCourses:hover{
+    color: var(--bs-color);
+}
+
+.container div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+
+}

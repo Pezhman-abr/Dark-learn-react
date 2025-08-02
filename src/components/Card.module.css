@@ -1,0 +1,107 @@
+@import "./fonts.css";
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.cardLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cardContainer{
+    width: 300px;
+    height: 410px;
+    box-shadow: var(--shadow-lg);
+    background-color: var(--Box--color);
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.cardSmall{
+    height: 400px;
+}
+.cardContainer:hover{
+    box-shadow: var(--hover-glow);
+}
+.cardContainer img {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cartNameBox{
+    /* background-color: #333; */
+    height: 120px;
+    margin-top: -20px;
+    font-family: "iranyekanwebmedium";
+    font-size: .9rem;
+    color: var(--Font1-color);
+    padding: 5px 10px;
+    text-align: justify;
+}
+.cartNameBox p:nth-child(2){
+    color: var(--Font2--color);
+}
+.courseTeacher{
+    /* background-color: rgb(209, 209, 209); */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 2px solid #acacac;
+    width: 85%;
+    margin: 15px auto;
+    height: 20px;
+    line-height: 20px;
+    font-family: YekanBakhHeavy;
+    font-size: .8rem;
+}
+.courseTeacher span:first-child{
+    color: var(--Font3--color);
+    font-family: "iranyekanwebregular";
+}
+.courseTeacher span:last-child{
+    font-family: iranyekanwebregular;
+    color: rgb(196, 171, 3);
+    font-size: 0.9rem;
+
+}
+
+.coursePrice{
+    /* margin-top: 20px; */
+    font-family: YekanBakhBold;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.coursePrice div:nth-child(1){
+    height: fit-content;
+    padding: 5px;
+    font-size: .9rem;
+    color: var(--Font3--color);
+    font-family: YekanBakhMedium;
+    width: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.coursePrice div:nth-child(3){
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.offPrice{
+    color: #fff;
+    background-color: #08b642;
+    border-radius: 5px;
+    padding: 5px 5px 0px;
+    position: relative;
+    left: -20%;
+    bottom: 35%;
+}

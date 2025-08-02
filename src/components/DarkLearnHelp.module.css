@@ -1,0 +1,102 @@
+@import "../components/fonts.css";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.container > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.container div:nth-child(1) > span:nth-child(1){
+    color: #fff;
+    background-color: var(--bs-color);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+.container div:nth-child(1) > span:nth-child(2){
+    font-size: 1.1rem;
+    
+}
+
+
+
+.containerLastChild{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.helpInfo{
+    background-color: var(--Box--color);
+    width: calc(48% - 60px);
+    margin: 15px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    height: 90px;
+
+
+}
+
+.helpInfo > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    color: var(--Font1-color);
+}
+.helpInfo > div:nth-child(1){
+    font-size: 3rem;
+    padding: 25px 0 0 25px;
+
+
+}
+
+.helpInfo > div:nth-child(2) span:nth-child(1){
+    font-size: 1rem;
+    padding-bottom: 13px;
+    font-family: 'iranyekanwebmedium';
+}
+
+.helpInfo > div:nth-child(2) span:nth-child(2){
+    color: var(--Font1-color);
+    font-size: 0.9rem;
+    line-height: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 1000px){
+    .helpInfo{
+        width: 35%;
+    }
+    
+    .helpInfo > div:nth-child(2) > span:nth-child(2){
+        font-size: .5rem;
+
+    }
+}
+@media (max-width: 765px){
+    .helpInfo{
+        width: 90%;
+    }
+    .helpInfo > div:nth-child(2) > span:nth-child(2){
+        font-size: 1rem;
+
+    }
+}
+@media (max-width: 450px){
+    .helpInfo > div:nth-child(2) > span:nth-child(2){
+        font-size: .6rem;
+
+    }
+}

@@ -1,0 +1,190 @@
+@import '../components/fonts.css';
+.container{
+    margin-top: 100px;
+    /* background-color: royalblue; */
+    display: flex;
+    flex-direction: column;
+    color: var(--Font1-color);
+}
+.courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: fit-content;
+}
+.searchBoxAndFilters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.searchBoxAndFilters div:nth-child(1){
+    width: 250px;
+    border-radius: 12px;
+}
+
+.searchBoxAndFilters div:nth-child(2){
+    background-color: var(--Box--color);
+    width: 73%;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 30px;
+}
+.searchBoxAndFilters div:nth-child(2) button {
+    margin-right: 10px;
+    font-family: "iranyekanwebregular";
+    border: none;
+    height: 100%;
+    font-size: 0.9rem;
+    color: var(--Font1-color);
+    background: none;
+    cursor: pointer;
+
+}
+
+.active{
+    border-top: 2px solid #1c7bf8 !important;
+    color: #1c7bf8 !important;
+    border-bottom: 2px solid #1c7bf8 !important;
+}
+.checkBox{
+    /* background-color: #1c7bf8; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 10px ;
+    align-items: safe;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+.checkBox > div:nth-child(1){
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.checkBox > div:nth-child(2){
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    margin-right: 40px;
+}
+.filtered{
+    background-color: var(--Box--color);
+    width: 280px;
+    border-radius: 8px;
+    margin-right: -10px;
+    
+}
+
+.filtered summary{
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 20px 20px;
+    color: var(--Font1-color);
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+}
+.filterCat{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+.cat{
+    padding: 10px 0;
+    color: var(--Font1-color);
+    cursor: pointer;
+}
+
+@media (max-width: 1173px){
+    .searchBoxAndFilters div:nth-child(2){
+        width: 55%;
+        margin-right: 110px;
+    }
+    .checkBox > div:nth-child(2){
+        width: 58%;
+        justify-content: start;
+        margin: 0 83px 0 0;
+
+    }
+    .searchBoxAndFilters{
+        justify-content: start;
+    }
+}
+@media (max-width: 1054px){
+    .searchBoxAndFilters div:nth-child(2){
+        width: 80%;
+        margin: 0 40px 0 0;
+        font-size: 0.8rem;
+
+
+    }
+     
+    .searchBoxAndFilters div:nth-child(2) button{
+        font-size: 0.8rem;
+    }
+    .checkBox > div:nth-child(2){
+        margin: 0;
+    }
+
+}
+@media (max-width: 745px){
+    
+       .searchBoxAndFilters div:nth-child(2){
+        width: calc(100% - 40px);
+        margin: 0 40px 0 0;
+        font-size: 0.7rem;
+    }
+    .searchBoxAndFilters div:nth-child(2) button{
+        font-size: 0.6rem;
+    }
+    
+}
+    @media (max-width: 655px){
+        .searchBoxAndFilters div:nth-child(1){
+            display: none;
+        }
+        .searchBoxAndFilters div:nth-child(2){
+            width: calc(100% - 30px);
+            margin: 0 15px;
+            font-size: 0.7rem;
+        }
+    }
+    
+@media (max-width: 585px){
+        .checkBox{
+            flex-direction: column;
+            align-items: center;
+        }
+        .filtered{
+            width: calc(100% - 10px);
+            margin: 15px 5px;
+        }
+        .filterCat{
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .cat{
+            padding: 10px 13px;
+            text-align: justify;
+        }
+        .checkBox > div:nth-child(2){
+            width: 100%;
+    }
+
+    }

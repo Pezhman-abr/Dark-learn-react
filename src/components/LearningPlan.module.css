@@ -1,0 +1,75 @@
+.LearnPlanDiv{
+    margin-top: 100px;
+
+}
+
+.LearnPlanDiv > span{
+    color: #FFF;
+    background-color: var(--bs-color);
+    padding: 0 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.LearnPlanDiv > p{
+    font-size: 1.2rem;
+    margin-right: 10px;
+
+    background: linear-gradient(90deg , #d51097 , #17ea17 ,#f51717);
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+}
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+.planBoxDetils{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.container img{
+    width: 70px;
+}
+.frontEndPLan{
+    background: linear-gradient(90deg , #FFB535 , #F2295B);
+}
+.scurityPlan{
+    background: linear-gradient(90deg , #30C5E4 , #28E55D);
+}
+.phytonPlan{
+    background: linear-gradient(90deg , #2E9EFF , #9C33F7);
+}
+.sowftwarePlan{
+    background: linear-gradient(90deg , #FF3571 , #880175);
+}
+
+@media (max-width: 581px){
+    .container{
+        justify-content: center;
+    }
+    .planBoxDetils{
+        width: 320px;
+        margin: 10px 10px;
+    }
+}

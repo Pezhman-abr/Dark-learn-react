@@ -1,0 +1,148 @@
+@import '../fonts.css';
+.firstBoxCon{
+    background-color: var(--Box--color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.infosBox{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.infosBox > div:nth-child(2){
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 20px 0 0;
+    font-size: 0.9rem;
+
+}
+.infosBox > div:nth-child(2) > span:nth-child(2){
+    font-size: 0.8rem;
+    color: var(--Font3--color);
+    padding-top: 10px;
+}
+.twoBoxIcons{
+    font-size: 3.5rem;
+}
+
+.statusViwe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--Box--color);
+    border-radius: 8px;
+}
+.card{
+    margin: 10px 5px;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid gray;
+    width: 200px;
+    display: flex;
+    height: 195px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+.coursImages{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+}
+.coursImages:hover{
+    transform: scale(0.9);
+}
+.coursename{
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+
+.teacherName{
+    display:flex;
+    align-items: center ;
+    font-size: 0.8rem;
+    color: var(--Font2--color);
+    justify-content: start;
+    width: 100%;
+}
+
+.mayCourseSpan{
+    display: inline-block;
+    color: var(--Font1-color);
+    padding: 20px 10px 0 0;
+    font-family: YekanBakhBold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1073px){
+    .firstBoxCon{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 901px){
+    .firstBoxCon{
+        background: none;
+        /* flex-wrap: nowrap; */
+    }
+    .twoBoxIcons{
+        font-size: 3rem;
+    }
+    .infosBox{
+
+        margin: 10px 5px;
+        padding: 0;
+    }
+    .infosBox > div:nth-child(2) > span:nth-child(1){
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .infosBox > div:nth-child(2) > span:nth-child(2){
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 5px 0 0 0;
+    }
+    .viweStatuss{
+        padding-right: 20px ;
+    }
+    .statusViwe{
+        background: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .card{
+        width: 30%;
+        padding:0 ;
+    }
+    .coursImages{
+        width: 100%;
+    }
+}
+@media (max-width: 551px){
+    .card{
+        width: 45%;
+    }
+    .twoBoxIcons{
+        font-size: 2rem;
+    }
+}

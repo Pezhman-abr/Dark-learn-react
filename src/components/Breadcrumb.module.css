@@ -1,0 +1,28 @@
+@import 'fonts.css';
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    background-color: var(--Box--color);
+    color: var(--Font1-color);
+    padding: 12px;
+    border-radius: 8px;
+    font-family: iranyekanwebregular , Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+.link {
+    text-decoration: none;
+    color: var(--Font1-color);
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+.link:hover{
+    color: #63b3ed;
+}
+
+.separator{
+    margin: 0 8px;
+}
+.current {
+    font-weight: bold;
+    color: var(--Font1-color);
+}

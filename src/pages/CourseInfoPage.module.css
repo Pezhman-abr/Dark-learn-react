@@ -1,0 +1,258 @@
+.container{
+    display: flex;
+    margin-top: 20px;
+    color: var(--Font1-color);
+
+}
+.container > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.container > div:nth-child(2){
+    width: 50%;
+    padding: 20px 0;
+}
+
+.imgBox{
+    display: flex;
+    margin-right: 10px;
+
+}
+.priceAndBuyBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    padding: 0 10px;
+}
+
+.imageBox{
+    width: 100%;
+    border-radius: 8px;
+}
+.addToBasket{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: iranyekanwebmedium;
+    border-radius: 7px;
+    color: #FFF;
+    background-color: var(--bs-color);
+    border: none;
+    transition: all .2s ease-in-out;
+}
+.addToBasket:hover{
+    background-color: #09d751;
+}
+
+.CourseInfoBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: space-between;
+}
+.infoChild{
+    background-color: var(--Box--color);
+    border-radius: 7px;
+    padding: 15px 20px 15px 0;
+    margin: 10px 10px;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+}
+.infoBoxValue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+}
+.infoBoxValue > span{
+    color: var(--Font1-color);
+    padding-bottom: 10px;
+}
+.infoBoxValue > span:nth-child(2){
+    color: var(--Font2--color);
+    font-size: 0.8rem;
+}
+.container2{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container3{
+background-color: var(--Box--color);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items:center;
+width: 33%;
+height: 180px;
+border-radius: 8px ;
+}
+.container3 > div:nth-child(1){
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    padding: 15px 0;
+    width: 100%;
+    
+}
+
+.container3 > div:nth-child(1) > div:nth-child(1){
+    background-color: gray;
+    color: #fff;
+    padding: 15px 15px 15px 0;
+    border-radius: 8px;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+.container3 > div:nth-child(1) > div:nth-child(2) {
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 15px 15px 0;
+    width: 40%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.spanInfo{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+.spanInfo > span:nth-child(1){
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: var(--Font2--color);
+}
+.ProgressBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: var(--Font1-color);
+}
+.progressInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1154px){
+    .CourseInfoBox{
+        width: 50%;
+        justify-content: start;
+    }
+
+    .infoChild{
+        width: 37%;
+
+    }
+    .container3{
+        width: 50%;
+        margin-top: -20px;
+        height: 280px;
+    }
+
+
+}
+@media (max-width: 923px){
+    .imageBox{
+        width: 75%;
+        height: 85%;
+    }
+    .infoChild{
+        padding-right:10px ;
+
+    }
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+    .container > div:nth-child(1){
+        /* height: 160px; */
+        margin-top: 20px;
+    }
+    .courseTitle{
+        font-size: 0.9rem;
+    }
+    .courseDesc{
+        font-size: 0.8rem;
+    }
+    .priceAndBuyBtn{
+        margin-top: 20px;
+        margin-right: -20px;
+        width: 350px;
+    }
+}
+@media (max-width: 770px){
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /* background-color: #09d751; */
+        padding: 0;
+    }
+    .priceAndBuyBtn{
+
+        width: fit-content;
+        font-size: 0.8rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .imageBox{
+        width: 100%;
+    }
+    .container3{
+        width: 80%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .CourseInfoBox{
+        flex-direction: row;
+
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .container > div:nth-child(1){
+        align-items: center;
+        width: 90%;
+    }
+    .addToBasket{
+        font-size: 0.8rem;
+    }
+    .infoBoxValue > span{
+        font-size: 0.8rem;
+    }
+    .infoBoxValue > span:nth-child(2){
+        font-size: 0.6rem;
+    }
+
+}

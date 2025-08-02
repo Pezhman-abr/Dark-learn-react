@@ -1,0 +1,121 @@
+@import "../components/fonts.css";
+.container{
+    /* background-color: var(--Font3--color); */
+        background-color: #aac9ed;
+
+    padding: 170px 0 50px 0;
+    /* height: 320px; */
+    text-align: center;
+    font-family: iranyekanwebregular;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.bannerimage{
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+.h1elm, .pelm{
+    color: var(--Font1-color);
+
+}
+.courseInfoBox{
+    background-color: #cb96ff;
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    width: calc(100% - 60px);
+    /* height: 100px; */
+    margin: 60px auto 0;
+    border-radius: 20px;
+    padding: 20px 0;
+
+}
+.courseAbout{
+    width: 100px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    font-family: YekanBakhMedium;
+    font-size: 1.1rem;
+
+}
+.courseAbout img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.firstSectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 10px 0 0;
+}
+.firstSectionTitle div span {
+    color: var(--Font2--color);
+    background-color: #0ac561c0;
+    line-height: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+
+}
+
+.moreCourses{
+    text-decoration: none;
+    color: var(--Font2--color);
+}
+.moreCourses:hover{
+    color: var(--bs-color);
+}
+.levelUpCourse{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width : 393px){
+    .courseAbout img{
+        width: 40px;
+    }
+    .container{
+        margin: 0px auto 0;
+        /* width: 92%; */
+        border-radius: 2px;
+        /* height: 220px; */
+        padding: 120px 0 70px 0;
+
+    }
+
+    .courseAbout{
+        font-size: 0.8rem;
+    }
+    .courseInfoBox{
+        margin: 150px 0 10px 0;
+    }
+    .h1elm{
+        font-size: .9rem;
+    }
+    .pelm{
+        font-size: .6rem;
+        margin-bottom: 100px;
+    }
+    .firstSectionTitle  div p{
+        font-size: .8rem;
+    }
+    .bannerimage{
+        width: 250px;
+        top: 205px;
+        left: auto;
+    }
+}

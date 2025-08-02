@@ -1,0 +1,77 @@
+@import 'fonts.css';
+
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 33px;
+  padding: 0.7rem 1rem;
+  max-width: 700px;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+  /* margin-top: 50px; */
+
+}
+
+.searchContainer:focus-within {
+  box-shadow: 0 0 0 2px #00ff88;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--bs-color);
+  font-size: 1.1rem;
+  outline: none;
+  font-family:iranyekanwebregular ;
+}
+
+.searchButton {
+  background: var(--bs-color);
+  border-radius: 50%;
+  border: none;
+  color: #FFF;
+  line-height: 13px;
+  cursor: pointer;
+  padding: 10px 12px;
+  transition: color 0.2s;
+}
+
+.searchButton:hover {
+  color: #00ff88;
+}
+.searchModal{
+    background-color: var(--Box--color);
+    width: 700px;
+    border-radius: 5px;
+    z-index: 30;
+    position: absolute;
+    top: 65%;
+    height: 200px;
+    overflow-y: scroll;
+
+
+}
+.searchModal ul {
+    text-align: right;
+    padding: 0 20px;
+}
+.listItem {
+    border-bottom: 2px solid gray;
+}
+
+@media (max-width: 765px){
+  .searchContainer{
+    width: 60%;
+  }
+}
+@media (max-width: 393px){
+  .searchButton{
+    display: none;
+  }
+  .searchContainer{
+    display: none;
+  }
+}

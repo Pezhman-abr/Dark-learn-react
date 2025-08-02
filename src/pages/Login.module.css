@@ -1,0 +1,22 @@
+.bodyCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    color: var(--Font1-color);
+}
+.logoImgAndName{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.logoImgAndName img {
+    width: 60px;
+    padding-left: 20px;
+}

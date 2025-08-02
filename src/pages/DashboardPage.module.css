@@ -1,0 +1,241 @@
+@import '../components/fonts.css';
+.container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: var(--Font1-color);
+    /* margin: 0px 0; */
+    font-family: iranyekanwebregular;
+    padding: 0 20px;
+    position: relative;
+}
+
+.menu{
+    background-color: var(--Box--color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin: 40px 0 0 0;
+    border-radius: 7px;
+    min-height: 810px;
+}
+.menu > div:nth-child(1){
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px;
+    padding: 0 0 10px 0;
+}
+.menu > div:nth-child(1) > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px 0 5px 20px;
+    height: 50px;
+    justify-content: space-evenly;
+    font-size: .9rem;
+}
+.settingIcon{
+    padding-left: 10px;
+}
+
+.menu > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.menuLink{
+    text-decoration: none;
+    color: var(--Font1-color);
+    padding: 6px 25px 0 0;
+    margin: 15px 0;
+    transition: color .2s ease;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    border-right: 2px solid transparent;
+}
+.menuLink:hover{
+    color: var(--bs-color);
+}
+.active{
+    border-right: 2px solid var(--bs-color);
+    color: var(--bs-color);
+}
+.menuLinkIcons{
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+.hederBox{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 0 0;
+    width: 80%;
+
+}
+.hederBox > div:nth-child(1){
+    background-color: var(--Box--color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    border-radius: 8px;
+}
+.hederBox > div:nth-child(1) > div:nth-child(1){
+
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+.hederBox > div:nth-child(1) > div:nth-child(1) input{
+    padding: 10px 20px;
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    font-family: iranyekanwebregular;
+
+}
+.hederBox > div:nth-child(1) > div:nth-child(1) input:focus{
+    outline: none;
+}
+.searchBoxIcon{
+    color: var(--bs-color);
+    font-size: 1.7rem;
+}
+.dateAndIconsBox{
+    width: 30%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.dateAndIconsBox div{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    font-size: 1.7rem;
+    color: var(--Font1-color);
+    border-left: 2px solid gray;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.bodyBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.developer{
+    height: fit-content;
+    /* position: absolute; */
+    /* bottom: 0; */
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 20px 20px 10px 20px;
+    background-color: var(--Box--color);
+    border-radius: 5px;
+    padding: 10px 0;
+    direction: ltr;
+    text-align: center;
+    color: var(--Font1-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dateStyle{
+    padding-right: 20px;
+    display: block;
+
+    font-size: 1rem;
+    width: 60%;
+}
+.menuBtn{
+        display: none;
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+.colseMenu{
+    transition: trasnform 0.3s ease;
+    display: none;
+}
+
+
+@media (max-width: 901px){
+    .hederBox > div:nth-child(1){
+        background: none;
+        border-bottom: 1px solid gray;
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    .dateStyle{
+        display: none;
+    }
+    .dateAndIconsBox div {
+        border-left: none;
+    }
+    .dateAndIconsBox{
+        flex-direction: row-reverse;
+    }
+    .container{
+        padding: 0;
+    }
+    .menu{
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .hederBox{
+        padding: 0;
+        border-right: 1px solid #848383;
+        
+    }
+    .hederBox > div:nth-child(1) > div:nth-child(1) {
+        margin-right: 20px;
+        background-color: var(--Box--color);
+        border-radius: 10px;
+    }
+   
+}
+@media (max-width: 770px){
+    .menu{
+        transform: translateX(220px);
+        opacity: 0;
+        position: absolute;
+        transition: transform 0.2s ease;
+        background-color: var(--Box--color);
+        /* height: 100%; */
+        /* margin: 0; */
+        box-shadow: 0 0 15px 6px #ddd;
+    }
+    .boxVisible{
+        transform: translateX(0);
+        opacity: 1;
+        position: absolute;
+    }
+    .hederBox{
+        width: 100%;
+        margin-right: 0;
+        border-right: none;
+    }
+    .hederBox > div:nth-child(1){
+        justify-content: space-between;
+    }
+    .hederBox > div:nth-child(1) > div:nth-child(1){
+        display: none;
+    }
+    .menuBtn, .colseMenu{
+        display: block;
+    }
+
+
+}

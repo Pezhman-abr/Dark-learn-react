@@ -1,0 +1,43 @@
+@import '../fonts.css';
+.container{
+    background-color: var(--Box--color);
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.container span{
+    color: var(--bs-color);
+    font-size: 1.3rem;
+    font-family: YekanBakhHeavy;
+}
+.container input {
+    padding: 10px 30px;
+    width: 230px;
+    border-radius: 5px;
+    border-color: var(--FontHover--color);
+    font-size: 1rem;
+    font-family: YekanBakhMedium;
+    color: var(--FontHover--color);
+    box-shadow: var(--hover-glow);
+
+}
+.container button {
+    padding: 15px 30px;
+    width: 300px;
+    font-size: 1rem;
+    font-family:iranyekanwebmedium ;
+    background-color: #fff;
+    color: #fff;
+    background-color: var(--bs-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container button:hover{
+    transform: scale(0.99);
+}
