@@ -12,6 +12,7 @@ import SearchBox from "../components/SearchBox"
 import GlowBall from "../components/GlowBall"
 
 import { IoMdArrowRoundBack } from "react-icons/io";
+import GoToUpBtn from "../components/GoToUpBtn"
 
 
 
@@ -51,6 +52,7 @@ function HomePage() {
           </div>
         </div>
         </nav>
+        <GoToUpBtn />
         <section>
         <div className={styles.firstSectionTitle}>
             <div>

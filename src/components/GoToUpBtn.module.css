@@ -1,0 +1,38 @@
+
+
+.container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  .button{
+    padding: 17px 20px;
+    background: radial-gradient(circle at 30% 30%, #4fd1c5, #0ea5e9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+    animation: Gotoup 2.8s infinite ease-in-out;
+    transition: transform .2s ease-out;
+    will-change: transform, border-radius;
+    /* transform: scale(); */
+  }
+
+  @keyframes Gotoup {
+     0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(0.87, 1.1);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

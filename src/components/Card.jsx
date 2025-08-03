@@ -45,8 +45,8 @@ function Card({course, heigth}) {
             </div>
             {course.pricOFF && (
               <span className={styles.offPrice}>
-                {Math.floor(((course.pricOFF - course.price) / course.pricOFF) * 100).toLocaleString('fa-IR')}٪
-              </span>
+                {Math.floor(((course.pricOFF - course.price) / course.pricOFF) * 100).toLocaleString('fa-IR')}٪ 
+               </span> 
             )}
             <div>
               <s style={{ fontSize: '.9rem', color: 'var(--Font3--color)' }}>
