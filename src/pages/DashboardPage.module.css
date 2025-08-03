@@ -181,6 +181,7 @@
     }
     .dateAndIconsBox div {
         border-left: none;
+        align-items: start;
     }
     .dateAndIconsBox{
         flex-direction: row-reverse;

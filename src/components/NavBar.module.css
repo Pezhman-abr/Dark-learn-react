@@ -161,4 +161,7 @@
         width: 30px;
         margin-left: 20px;
     }
+    .darkModIcon{
+        font-size: 1.9rem;
+    }
 }

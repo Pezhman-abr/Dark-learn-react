@@ -40,10 +40,10 @@ function ScrollCard() {
         }}
         pagination={{ clickable: true }}
         breakpoints={{
-          300: {slidesPerView: 2},
+          300: {slidesPerView: 1},
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
-          1219: { slidesPerView: 3 },
+          1219: { slidesPerView: 4 },
         }}
         
       >

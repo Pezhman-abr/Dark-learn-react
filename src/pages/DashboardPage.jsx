@@ -8,9 +8,7 @@ import { SlEnergy } from "react-icons/sl";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { PiWindowsLogoThin } from "react-icons/pi";
-
 import Cookies from 'js-cookie'
-import MainLayout from '../layouts/MainLayout'
 import { GoHome } from "react-icons/go";
 import DarkMod from '../components/DarkMod';
 import GlowBall from '../components/GlowBall';

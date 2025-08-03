@@ -129,20 +129,19 @@
 @media (max-width: 400px){
     .cardContainer{
         width: 45%;
-        height: fit-content;
+        height: 200px;
         justify-content: start;
     }
-    
+
     .cartNameBox{
-        height: fit-content;
-        padding-bottom: 0;
+        height: 20px;
+        /* padding-bottom: 0; */
         font-size: 0.5rem;
         font-family: YekanBakhBold;
          display: -webkit-box;
          -webkit-line-clamp: 1; /* تعداد خطوط مجاز */
          -webkit-box-orient: vertical;
          overflow: hidden;
-
     }
     .cartNameBox p:nth-child(2){
         display: none;
@@ -156,7 +155,7 @@
     .coursePrice{
         margin-top: 0;
         font-size: 0.7rem;
-        height: 33px;
+        height: 30px;
         align-items: center;
 
     }
@@ -166,7 +165,7 @@
         font-size: 0.6rem;
     }
     .pricesoff{
-        font-size: 0.6rem;
+        display: none;
     }
     .studentAllForApplay{
         font-size: 0.6rem;

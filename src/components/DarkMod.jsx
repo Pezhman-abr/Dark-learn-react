@@ -16,7 +16,7 @@ function DarkMod() {
           }
     
   return (
-    <button className={styles.darkModBtn} onClick={darkModHandler}>{isDarkMod ? <MdDarkMode /> : <IoSunny />}</button>
+    <button className={styles.darkModBtn} onClick={darkModHandler}>{isDarkMod ? <MdDarkMode className={styles.darkModIcon} /> : <IoSunny className={styles.darkModIcon} />}</button>
   )
 }
 
