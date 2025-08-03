@@ -148,5 +148,17 @@
         font-size: 1.3rem;
 
     }
-
+    .container{
+        
+        background: #03ad4f;
+        border: 3px dashed #CB96FF;
+        box-shadow: none;
+        padding: 0 10px;
+        height: 50px;
+    }
+    .container div:nth-child(1) img{
+        display: none;
+        width: 30px;
+        margin-left: 20px;
+    }
 }

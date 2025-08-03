@@ -106,3 +106,75 @@
     left: -20%;
     bottom: 35%;
 }
+
+.pricesoff{
+    font-size: 0.9rem;
+    color: var(--Font3--color);
+}
+.allStudenIcon{
+    margin-left: 5px;
+}
+.studentAllForApplay{
+    display: flex;
+    align-items: center;
+}
+.allStudenIcon{
+    font-size: 1rem;
+}
+.allStudenNumber{
+    /* background-color: #08b642; */
+    height: 19px;
+}
+
+@media (max-width: 400px){
+    .cardContainer{
+        width: 45%;
+        height: fit-content;
+        justify-content: start;
+    }
+    
+    .cartNameBox{
+        height: fit-content;
+        padding-bottom: 0;
+        font-size: 0.5rem;
+        font-family: YekanBakhBold;
+         display: -webkit-box;
+         -webkit-line-clamp: 1; /* تعداد خطوط مجاز */
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+
+    }
+    .cartNameBox p:nth-child(2){
+        display: none;
+    }
+    .courseTeacher {
+        margin-bottom: 0;
+    }
+    .courseTeacher > span:nth-child(1), .courseTeacher > span:nth-child(2){
+        font-size: 0.6rem;
+    }
+    .coursePrice{
+        margin-top: 0;
+        font-size: 0.7rem;
+        height: 33px;
+        align-items: center;
+
+    }
+    .offPrice{
+        left: 0;
+        top: 2px;
+        font-size: 0.6rem;
+    }
+    .pricesoff{
+        font-size: 0.6rem;
+    }
+    .studentAllForApplay{
+        font-size: 0.6rem;
+        height: fit-content;
+    }
+    .allStudenIcon, .allStudenNumber{
+        font-size: 0.6rem;
+        height: 13px;
+    }
+   
+}

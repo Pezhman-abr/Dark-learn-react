@@ -29,21 +29,21 @@ function ScrollCard() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={4}
         navigation = {{
           nextEl: '.custom-next',
           prevEl: '.custom-prev'
         }}
         autoplay={{
-          delay: 3000,     // هر ۳ ثانیه اسلاید بعدی
+          delay: 4000,     // هر ۳ ثانیه اسلاید بعدی
           disableOnInteraction: false, // حتی بعد از تعامل کاربر، ادامه بده
         }}
         pagination={{ clickable: true }}
         breakpoints={{
-          300: {slidesPerView: 1},
+          300: {slidesPerView: 2},
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          1219: { slidesPerView: 3 },
         }}
         
       >

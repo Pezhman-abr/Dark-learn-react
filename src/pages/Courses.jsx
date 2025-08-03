@@ -10,6 +10,7 @@ import styles from './Courses.module.css'
 import SearchBox from '../components/SearchBox'
 import { useEffect, useState } from 'react'
 import GlowBall from '../components/GlowBall'
+import GoToUpBtn from '../components/GoToUpBtn'
 
 function Courses() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -103,6 +104,7 @@ useEffect(() => {
             </details>
             
             <GlowBall color="#50ff53" location="rigth"  value='0'/>
+            <GoToUpBtn />
           </div>
           <div className={styles.coursesCard}>
             {sortedCourses.map(course => (

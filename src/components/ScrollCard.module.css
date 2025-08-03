@@ -1,11 +1,14 @@
 .container{
     margin-top: 100px;
+    max-width: 100%;
+
 }
 
 .papulerCourseHeader{
     display: flex;
     flex-direction: column;
     margin-right: 10px;
+
 }
 .papulerCourseHeader span:first-child{
     color: #fff;

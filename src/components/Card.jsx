@@ -2,7 +2,7 @@ import React from 'react'
 import courseData from '../services/api'
 import styles from "./Card.module.css"
 import { Link, useNavigate } from 'react-router-dom'
-import { FaStar, FaRegUser } from "react-icons/fa";
+import { FaStar, FaRegUser, FaUsers } from "react-icons/fa";
 
 
 function Card({course, heigth}) {
@@ -35,13 +35,13 @@ function Card({course, heigth}) {
             <p>{course.title2}</p>
           </div>
           <div className={styles.courseTeacher}>
-            <span style={{display:'flex', alignItems: 'center'}}><FaRegUser style={{marginLeft: '10px'}}/>{course.teacher2}</span>
+            <span style={{display:'flex', alignItems: 'center'}}><FaRegUser  style={{marginLeft: '5px'}}/>{course.teacher2}</span>
             <span>{course.satisfaction} <FaStar /></span>
           </div>
           <div className={styles.coursePrice}>
             <div className={styles.studentAllForApplay}>
-              <FaRegUser />
-              <span>{course.studentAll.toLocaleString("fa-IR")}</span>
+              <FaUsers className={styles.allStudenIcon} />
+              <span className={styles.allStudenNumber}>{course.studentAll.toLocaleString("fa-IR")}</span>
             </div>
             {course.pricOFF && (
               <span className={styles.offPrice}>
@@ -49,7 +49,7 @@ function Card({course, heigth}) {
                </span> 
             )}
             <div>
-              <s style={{ fontSize: '.9rem', color: 'var(--Font3--color)' }}>
+              <s className={styles.pricesoff} >
                 {course.pricOFF.toLocaleString('fa-IR')}
               </s>
               {course.price  && 
