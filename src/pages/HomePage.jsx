@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css"
 import courseData from "../services/api"
 import { Link } from "react-router-dom"
 import LearningPlan from "../components/LearningPlan"
-import ScrollCard from "../components/scrollCard"
+import ScrollCard from "../components/ScrollCard"
 import Card from '../components/Card'
 import DarkLearnHelp from "../components/DarkLearnHelp"
 import ScrollCard2 from "../components/ScrollCard2"
