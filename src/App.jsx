@@ -3,7 +3,7 @@ import MainLayout from "./layouts/MainLayout"
 import HomePage from "./pages/HomePage"
 import Courses from "./pages/Courses";
 import CourseInfoPage from "./pages/CourseInfoPage";
-import Page404 from "./pages/page404";
+import Page404 from "./pages/Page404";
 import Login from "./pages/Login";
 import NumberLogin from "./components/NumberLogin";
 import EmailLogin from "./components/EmailLogin";
