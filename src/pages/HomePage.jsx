@@ -35,17 +35,17 @@ function HomePage() {
           <SearchBox />
           <div className={styles.courseInfoBox}>
             <div className={styles.courseAbout}>
-                <img src="image/book-min.webp" alt="" />
+                <img src="image/book-min.webp" alt="bookImage" />
                 <span>{courseData.length}</span>
                 <span>دوره آموزشی</span>
             </div>
             <div className={styles.courseAbout}>
-                <img src="image/clock-min.webp" alt="" />
+                <img src="image/clock-min.webp" alt="clockImage" />
                 <span>{TotalTime}</span>
                  <span>ساعت آموزش</span>
             </div>
             <div className={styles.courseAbout}>
-                <img src="image/conversation-min.webp" alt="" />
+                <img src="image/conversation-min.webp" alt="conversationImage" />
                 <span>{TotalCourseStudent}</span>
                 <span>دانشجو</span>
             </div>
