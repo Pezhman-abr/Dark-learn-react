@@ -31,7 +31,7 @@ function HomePage() {
         <div className={styles.container}>
           <h1 className={styles.h1elm}>دارک لرن,اولین گام برنامه نویس شدن</h1>
           <p className={styles.pelm}>با آکادمی خصوصی دارک لرن,علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن</p>
-          <img className={styles.bannerimage} src="public/image/banner.webp" alt="banner" />
+          <img className={styles.bannerimage} src="/public/image/banner.webp" alt="banner" />
           <SearchBox />
           <div className={styles.courseInfoBox}>
             <div className={styles.courseAbout}>
