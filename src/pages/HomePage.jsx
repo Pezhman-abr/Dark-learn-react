@@ -31,21 +31,21 @@ function HomePage() {
         <div className={styles.container}>
           <h1 className={styles.h1elm}>دارک لرن,اولین گام برنامه نویس شدن</h1>
           <p className={styles.pelm}>با آکادمی خصوصی دارک لرن,علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن</p>
-          <img className={styles.bannerimage} src="/public/image/banner.webp" alt="banner" />
+          <img className={styles.bannerimage} src="image/banner.webp" alt="banner" />
           <SearchBox />
           <div className={styles.courseInfoBox}>
             <div className={styles.courseAbout}>
-                <img src="../public/image/book-min.webp" alt="" />
+                <img src="image/book-min.webp" alt="" />
                 <span>{courseData.length}</span>
                 <span>دوره آموزشی</span>
             </div>
             <div className={styles.courseAbout}>
-                <img src="../public/image/clock-min.webp" alt="" />
+                <img src="image/clock-min.webp" alt="" />
                 <span>{TotalTime}</span>
                  <span>ساعت آموزش</span>
             </div>
             <div className={styles.courseAbout}>
-                <img src="../public/image/conversation-min.webp" alt="" />
+                <img src="image/conversation-min.webp" alt="" />
                 <span>{TotalCourseStudent}</span>
                 <span>دانشجو</span>
             </div>
