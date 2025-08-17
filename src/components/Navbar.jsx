@@ -45,7 +45,7 @@ function Navbar() {
     <div className={styles.container}>
       <div>
 
-      <img src="public/image/Group2.png" alt="darklearn-logo" />
+      <img src="/image/Group2.png" alt="darklearn-logo" />
       <TiThMenu className={styles.HamburgerMenu} onClick={() => setMenu(!menu)} />
       <nav className={`${styles.nav} ${menu ? styles.navOpen : ''}`}>
         

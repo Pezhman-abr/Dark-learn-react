@@ -33,7 +33,7 @@ function Footer() {
 
         <div className={styles.trust}>
           <h4 style={{color:"var(--bs-color)", fontSize:"1.2rem"}}>اعتماد شما</h4>
-          <img src="public/image/Group2.png" alt="نماد اعتماد" />
+          <img src="/image/Group2.png" alt="نماد اعتماد" />
         </div>
 
       </div>
