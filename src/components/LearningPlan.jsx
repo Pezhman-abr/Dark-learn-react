@@ -19,28 +19,28 @@ function LearningPlan() {
 
             <Link to="courses?category=frontend" style={{textDecoration: "none"}}>
                 <div className={clsx(styles.planBoxDetils , styles.frontEndPLan)}>
-                    <img src="../public/image/monitor-code-svgrepo-com.svg" alt="" />
+                    <img src="/image/monitor-code-svgrepo-com.svg" alt="" />
                     <span style={{padding:'10px 0'}}>فرانت اند</span>
                     <span>{countByCategory("frontend")} دوره </span>
                 </div>
             </Link>
             <Link to={`/courses?category=security`} style={{textDecoration: "none"}}>
                 <div className={ clsx(styles.planBoxDetils, styles.scurityPlan)}>
-                    <img src="../public/image/security-protection-shield-done-tick-check-svgrepo-com.svg" alt="" />
+                    <img src="/image/security-protection-shield-done-tick-check-svgrepo-com.svg" alt="" />
                     <span style={{padding:'10px 0'}}>امنیت</span>
                     <span>{countByCategory("security")} دوره </span>
                 </div>
             </Link>
             <Link to={`/courses?category=python`} style={{textDecoration: "none"}}>
                 <div className={clsx(styles.planBoxDetils, styles.phytonPlan)}>
-                    <img src="../public/image/python-16-svgrepo-com.svg" alt="" />
+                    <img src="/image/python-16-svgrepo-com.svg" alt="" />
                     <span style={{padding:'10px 0'}}>پایتون</span>
                     <span>{countByCategory("python")} دوره </span>
                 </div>
             </Link>
             <Link to={`/courses?category=sowtware`} style={{textDecoration: "none"}}>
                 <div className={clsx(styles.planBoxDetils, styles.sowftwarePlan)}>
-                    <img src="../public/image/puzzle-piece-02-svgrepo-com.svg" alt="" />
+                    <img src="/image/puzzle-piece-02-svgrepo-com.svg" alt="" />
                     <span style={{padding:'10px 0'}}>مهارت های نرم</span>
                     <span>{countByCategory("sowtware")} دوره </span>
                 </div>

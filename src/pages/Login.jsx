@@ -19,7 +19,7 @@ function Login() {
     <div className={styles.bodyCon}>
     <div className={styles.container} >
       <div className={styles.logoImgAndName}>
-        <img  src="../public/image/Group2.png" alt="DarkLearn logo" />
+        <img  src="/image/Group2.png" alt="DarkLearn logo" />
         <h1>دارک لرن</h1>
       </div>
       <Outlet />
