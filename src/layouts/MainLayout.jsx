@@ -5,7 +5,7 @@ import styles from "./MainLayouts.module.css"
 function MainLayout({children}) {
   return (
     <>
-     <header>
+     <header className={styles.containerHeader}>
 
        <Navbar />
 
