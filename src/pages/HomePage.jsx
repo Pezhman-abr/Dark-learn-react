@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css"
 import courseData from "../services/api"
 import { Link } from "react-router-dom"
 import LearningPlan from "../components/LearningPlan"
-// import ScrollCard from '../components/ScrollCard'
+import ScrollCard from '../components/ScrollCard'
 import Card from '../components/Card'
 import DarkLearnHelp from "../components/DarkLearnHelp"
 import ScrollCard2 from "../components/ScrollCard2"
@@ -74,7 +74,7 @@ function HomePage() {
           </section>
           <section >
             <GlowBall color='rgba(255, 80, 80, 0.6)' location='left'value={0} />
-            {/* <ScrollCard/> */}
+            <ScrollCard/>
           </section>
           <section>
             <GlowBall color='#fa963e' location='rigth'value={0} />
